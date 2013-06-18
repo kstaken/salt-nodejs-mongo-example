@@ -1,3 +1,6 @@
+include:
+  - nodejs
+
 git:
   pkg:
     - installed
