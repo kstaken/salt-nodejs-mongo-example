@@ -15,7 +15,7 @@ nodejs:
  
 /etc/init/nodejs.conf:
     file.managed:
-      - source: salt://nodeapp/nodejs.conf
+      - source: salt://nodejs/nodejs.conf
       - user: root
       - group: root
       - mode: 644
