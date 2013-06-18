@@ -9,10 +9,10 @@ git:
     - require:
       - pkg: git
 
-Install dependencies:
-  cmd.run:
-    - name: npm install
-    - cwd: {{ pillar["app_path"] }}
-    - require:
-      - pkg: nodejs
-      - pkg: mongodb-10gen
+{{ pillar["app_path"] }}:
+    npm.bootstrap: 
+      - require:
+        - pkg: nodejs
+        - git.latest: {{ pillar["app_url"] }}
+
+
