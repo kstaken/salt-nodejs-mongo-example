@@ -1,0 +1,5 @@
+base:
+  '*':
+    - nodejs
+    - nodeapp
+    - mongodb
